@@ -149,7 +149,7 @@ Astro::AgileCtsMapGenI::shutdown(const Ice::Current& current)
 	current.adapter->getCommunicator()->shutdown();
 }
 
-bool LogEvtString(AGILECtsMapGenParams params, vector<float>& ra, vector<float>& dec)
+bool LogEvtString(AGILECtsMapGenParams params, vector<float> &ra, vector<float> &dec)
 {
 	//se Count() == 0 non si calcola la mappa
     if (params.paramIntervals.size() <= 0)
